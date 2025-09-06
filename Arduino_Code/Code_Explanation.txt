@@ -1,0 +1,25 @@
+-------------------------------
+  📌 Code Explanation (Summary)
+-------------------------------
+  1. Libraries:
+     - OneWire + DallasTemperature used to read from DS18B20 sensor.
+
+  2. Pin Setup:
+     - Sensor at pin 2, relay at pin 3.
+     - Pump turns ON if temperature >= 50°C.
+
+  3. setup():
+     - Starts serial communication.
+     - Sets relay pin as output.
+     - Initializes the temperature sensor.
+
+  4. loop():
+     - Reads temperature from sensor.
+     - Prints it on Serial Monitor.
+     - If temp >= threshold → Pump ON.
+       Else → Pump OFF.
+     - Waits 1 second before repeating.
+
+  ⚙️ Input: Temperature sensor reading
+  ⚙️ Output: Relay ON/OFF → Controls pump
+*/
